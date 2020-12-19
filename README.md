@@ -151,4 +151,26 @@ sonuc = (z > t) || (x > y)
 sonuc = !(z > t)
 
 ```
+## Date Object
+```
+var d = new Dat();
+console.log(d);
 
+// set methods
+d.setFullYear(1996);
+d.setMonth(10);
+d.setDate(25);
+
+
+// get methods
+console.log(d.getFullYear());
+console.log(d.getMonth()); // 6. indis temmuza denk geliyor
+console.log(d.getDate());
+console.log(d.getHours());
+console.log(d.getMinutes());
+console.log(d.getSeconds());
+console.log(d.getMilliseconds());
+console.log(d.getDay()); // pazar günü 0. indis
+
+
+```

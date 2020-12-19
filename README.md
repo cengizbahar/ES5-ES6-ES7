@@ -2,7 +2,7 @@
 ### http://kangax.github.io/compat-table/es5/
 
 
-## Eklentiler
+## Visual Studio Code Eklentiler
 - Live Server
 - JavaScript (ES6)
 - One Dark Pro

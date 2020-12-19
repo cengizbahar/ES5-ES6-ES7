@@ -248,4 +248,24 @@ sayi = Math.round(Math.random()*100)+1; // Küsürat almadan yuvarlayarak rastge
 console.log(x);
 console.log(typeof x);
 ```
+## Arrays  ( Dizi )
+```
+var country = ['Türkiye', 'Bg','Yunanistan'];
 
+var numbers = [15,25,35,29,24];
+
+var cn = ['Türkiye' , 15, null , undefined, ['Cengiz',23]];
+
+// get arrays
+console.log(contry[0]); // 0 elemanı çağırdık
+
+### set arrays
+
+country[0] = 'Bursa'; // 0. indisi değiştirdik
+
+country[country.length] = 'samsun'; // sonuncu elemanı yazmak
+
+console.log(country);
+console.log(typeof country); // türünü gösterir
+console.log(country.length); // kaç adet olduğunu gösterir
+```

@@ -3,7 +3,7 @@
 
 
 ## Eklentiler
-- 
-'''
-HTML
-'''
+- Live Server
+- JavaScript (ES6)
+- One Dark Pro
+

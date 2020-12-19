@@ -206,5 +206,46 @@ x = x.replace('Mustafa','Cengiz'); // Yer değiştirme methodu
 
 console.log(x);
 ```
+## Number Methotları
+```
+var x = 10;
+x = "10";
 
+
+x = Number ('10x'); // numbere dönüştürme
+x = isNaN('10x');
+
+//  parseInt parseFloat
+var sayi = 24.2324;
+
+sayi = parseInt(sayi); // sayımızı int e dönüştürme
+sayi = parseFloat(sayi); // sayinin tamamını alıyor
+
+//  preccision fixed
+
+sayi = sayi.toPrecision(2); // sayi elemanını 2 adetini ya da 5 adetini gibi şeyleri alabilip ekrana yazabiliriz
+sayi = sayi.toFixed() // virgülden sonrasını atar
+
+// Math Metotları 
+var y = 64;
+
+sayi = Math.PI; // Pi sayısı
+sayi = Math.round(2.8); // Yuvarlama 3 e eşitler
+sayi = Math.ceil(3.8); // Yukarı yuvarlar
+sayi = Math.floor(4.9); // Aşşağıya yuvarlar
+sayi = Math.sqrt(y) // Karekök hesaplama
+sayi = Math.pow(2,4) // Üslü sayıları bulma 2 üzeri 4
+sayi = Math.abs(-150); // Pozitif sayı alma mutlak deger
+
+sayi = Math.min(32,54,12,74,3,8,13,43); // En düşük sayıyı getirme
+sayi = Math.max(32,54,12,74,3,8,13,43); // En büyük sayıyı getirme
+
+sayi = Math.random()*100; // Rastgele sayı üretir
+sayi = Math.round(Math.random()*100)+1; // Küsürat almadan yuvarlayarak rastgele sayı üretir
+
+
+
+console.log(x);
+console.log(typeof x);
+```
 

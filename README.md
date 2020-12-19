@@ -657,6 +657,61 @@ console.log(val);
 
 ```
 
+## Multiple Elements
+```
+let val;
 
+val = document.getElementByClassName('card-header'); 
+
+val = val [0]; // Sıfırıncı elemanı getir
+
+
+for(let i =0; i<val.length; i++) {
+  console.log(val[i]);
+}  
+
+-----------------------------------
+val = document.getElementByTagName('div'); 
+-----------------------------------
+
+// querySelectorAll
+-----------------------------------
+val = document.querySelectorAll('.card-body');
+
+val.forEach(function (item) {
+  console.log(item);
+});
+console.log(val);
+
+
+```
+## Element Oluşturma
+```
+  const li = document.createElement('li');
+    li.className = 'list-group-item list-group-item-secondary';
+    li.setAttribute('title','text'); 
+    
+    // text node
+    
+    const text = document.createTextNode('6');
+    li.appendChild(text);
+    
+    const a = document.createElement('a');
+    a.setAttribute('href','#');
+    a.className = 'delete-item float-right';
+    a.innerHTML = "<i class= 'fas fa-times'></i>";
+  
+    // append a to li 
+    li.appendChild(a);
+    
+    // append li to ul
+    .document.querySelector('#task-list').appendChild(li);
+
+    
+    
+  console.log(li);
+```
+
+## DERS 24
 
 

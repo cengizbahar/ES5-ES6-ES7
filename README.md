@@ -368,4 +368,147 @@ switch (new Date().getDay()){
 }
 
 ```
+## Loops ( Döngüler )
+```
+
+// while
+-----------------------------------
+let i = 0;
+while (i<10) {
+  console.log(i);
+  i++;
+}
+-----------------------------------
+
+//do-while Loops
+-----------------------------------
+let i = 0;
+do{
+  console.log(i);
+  i++;
+}
+while(i<10) {
+  console.log("Döngü Bitti");
+}
+-----------------------------------
+
+// for 3 deger giriyor
+-----------------------------------
+- continue : işlemi tamamladım diğer satırları es geç döngüyü devam ettir
+- break : kendinden sonrakileri yazmıyor
+
+for(let i=0; i<10; i++){
+ if(i==2) {
+  console.log('iki =' +i);
+  continue;
+ }
+ if (i==5) {
+  console.log('beş =' + i); 
+  break;
+  }
+ console.log(i);
+}
+
+-----------------------------------
+// iç - içe for döngüleri içeriden başa dönüyor
+
+for (let i 10; i>0; i--) {
+  console.log('i = ' i);
+  for(let j=0; j>5;j++) {
+    console.log('j =' +j);
+  }
+}
+
+
+```
+
+## Template Literals 
+```
+Eski Yöntem
+-----------------------------------
+const fullName = "Cengiz Bahar";
+const city = "Turkiyede";
+const yearOfBirth = 1992;
+
+let val = 'Benim adım' + fullName + city + 'yaşıyorum' + (2020-yearOfBirth) + 'yaşındayım'.
+
+console.log(val);
+
+-----------------------------------
+// Template Literals Yeni
+: veya
+? kontrol etsin
+
+
+val = `Benim adım ${fullName}. ${city} yaşıyorum. ${(2020-yearOfBirth)} yaşındayım.`
+console.log(val);
+```
+## Object Literals
+```
+
+let person = {
+  firstName : 'Cengiz',
+  lastName : 'Bahar',
+  age : 28,
+  hobbies : ['music','csgo'],
+  adress : {
+    city : 'Kocaeli',
+    country: 'Türkiye'
+  },
+  getBirthYear : function() {
+    return 1992-this-age;
+  }
+}
+
+Bu şekilde objemize erişim sağlayabiliriz.
+
+let val;
+val = person;
+
+val = person.firstName;
+val = person.lastName;
+val = person.age;
+val = person.hobbies[1];
+val = person.adress.city;
+val = person.getBirthYear();
+
+
+let people = [
+  {
+    firstName : 'Erva',
+    lastName : 'Kaba'
+  },
+  {
+    firstName : 'Mergül',
+    lastName : 'Bahar'
+  }
+  
+  
+]
+console.log(person);
+
+```
+
+## Diziler
+
+```
+let cars = ['BMW','Mercedes','Audi'];
+
+for (let i = 0; i < cars.length; i++) {
+  console.log(cars[i]);
+}
+
+//Array
+// for-in
+-----------------------------------
+for(let i in cars) {
+  console.log(`index : ${i},value:  ${cars[i]}`);
+}
+console.log(typeof cars);
+-----------------------------------
+
+
+
+
+```
 

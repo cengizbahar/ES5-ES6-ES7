@@ -7,11 +7,12 @@
 - JavaScript (ES6)
 - One Dark Pro
 
-- var , let , const
+## var , let , const
 
-Let : Değiştirilebilir
-const : Değiştirilemez
 
+- Let : Değiştirilebilir
+- const : Değiştirilemez
+```
 var x;
 x = "mustafa";
 console.log(x);
@@ -23,3 +24,4 @@ console.log(fullname);
 
 const email="cengiz@gmail.com";
 console.log(email);
+```

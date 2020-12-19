@@ -292,4 +292,80 @@ console.log(country.length); // kaç adet olduğunu gösterir
 
 ```
 // if else ifadeleri
+
+var name = "cengiz";
+var age = 23;
+var drivingLicence = true;
+
+if(name == 'cengiz')
+{
+  console.log('benim adım Cengiz');
+}
+
+if(yas ==)
+else {
+  console.log('Araç Kullanamazsın')
+}
+
+age = 15; // iç içede if else açabiliriz
+
+if( age > 18) {
+  console.log('araç kullanabilirsiniz');
+}
+else {
+  console.log('18 yaşından küçükise araç kullanamazsınız')
+}
+
+
 ```
+
+## Switch Statements
+- Break ifadesini koymalıyız koymazsak her iki durumuda yazacaktır
+```
+let category = "coffee";
+
+switch(category) {
+  case 'coffee';
+    console.log('Sade Kahveniz Hazırlanıyor.);
+    break;
+  case 'coffemilk';
+    console.log('Sütlü Kahveniz Hazırlanıyor');
+    break;
+   default : 
+    console.log('Hatalı kategori seçtiniz');
+}
+
+let day ;
+switch (new Date().getDay()){
+  case 0:
+    day = 'Pazar';
+    console.log('Bugün Günlerden' + day);
+    break;
+  case 1:
+    day = 'Pazartesi';
+    console.log('Bugün Günlerden' + day);
+     break;
+  case 2:
+    day = 'Salı';
+    console.log('Bugün Günlerden' + day);
+     break;
+  case 3:
+    day = 'Çarşamba';
+    console.log('Bugün Günlerden' + day);
+     break;
+  case 4:
+    day = 'Perşembe';
+    console.log('Bugün Günlerden' + day);
+     break;
+  case 5:
+    day = 'Cuma';
+    console.log('Bugün Günlerden' + day);
+     break;
+  case 6:
+    day = 'Cumartesi';
+    console.log('Bugün Günlerden' + day);
+     break;
+}
+
+```
+

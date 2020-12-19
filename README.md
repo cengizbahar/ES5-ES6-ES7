@@ -605,6 +605,54 @@ val = window.location.href; // sitelinkini alıyor
 val = window.location.hostname; // host adresini yakalıyor
 
 
+
+console.log(val);
+
+ -----------------------------------
+ 
+ let val;
+ val = window.document;
+ 
+ val = document.all;
+ val = document.length;
+ val = document.all[10];
+ val = document.head;
+ val = document.body;
+ val = document.URL;
+ val = document.images;
+ val = document.title;
+ val = document.forms;
+ val = document.forms[0]id;
+ 
+ console.log(val);
+ 
+
+// single elements
+ -----------------------------------
+let val;
+val = document.getEelementById('header'); // Elementi Yakala
+val = document.getEelementById('header').className; // Classname yakalama
+
+val.style.fontSize = '150px';
+val.style.color = "red";
+
+
+//innerText  && innerHTML
+ -----------------------------------
+val = document.getElementById('Header').innerText = 'Benim Listem'; // Başlığı yakalayıp değiştirir
+val = document.getElementById('Header').innerHTML = '<p>Benim Listem</p>'; // Elemente html methodu ekleyebiliriz
+
+// alternatif özelliğimiz
+ -----------------------------------
+ // document.querySelector() İstediğim elementi yakalayabilirim
+ 
+ val = document.querySelector('#header');
+ val = document.querySelector('.app-title');
+ 
+ val = document.querySelector('li').style.color = 'red'; // ilk li ye kırmızı verir
+ val = document.querySelector('li:last-child').style.color = 'blue'; // son elemanı yakalama
+ 
+ 
 console.log(val);
 
 ```

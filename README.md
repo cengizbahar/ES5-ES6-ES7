@@ -63,3 +63,25 @@ var yas = 36;
 var online = true;
 
 ```
+
+## Reference Types - Objects
+- array : Diziler
+- objects : Nesne
+- function
+```
+// array
+var cars = ['Reno','BMW']
+
+// objects
+var person = {
+  name : "cengiz",
+  age  : "28"
+}
+
+// function
+var isAlive = function(){
+  return: 0;
+}
+
+
+```

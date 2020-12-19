@@ -244,7 +244,6 @@ sayi = Math.random()*100; // Rastgele sayı üretir
 sayi = Math.round(Math.random()*100)+1; // Küsürat almadan yuvarlayarak rastgele sayı üretir
 
 
-
 console.log(x);
 console.log(typeof x);
 ```
@@ -259,13 +258,38 @@ var cn = ['Türkiye' , 15, null , undefined, ['Cengiz',23]];
 // get arrays
 console.log(contry[0]); // 0 elemanı çağırdık
 
-### set arrays
+// set arrays
 
 country[0] = 'Bursa'; // 0. indisi değiştirdik
 
 country[country.length] = 'samsun'; // sonuncu elemanı yazmak
 
+// add arrays item
+country.push(19); // son elemandan sonrasına eklemek
+country.push('bahar'); // son elemana string
+
+country.unshift(23); // başa ekleme
+
+// remove arrays item
+country.pop(); // sondaki elemanı silme
+country.shift(): // en baştaki elemanı silme
+
+//reverse (Ters Çevirme)
+.country.reverse(); // terse yazma
+
+// sort
+country.sort(); // alfabetik sıraya göre sıralama
+
+// concat (iki diziyi birleştirme)
+var x = country.concat(numbers);
+
+
 console.log(country);
 console.log(typeof country); // türünü gösterir
 console.log(country.length); // kaç adet olduğunu gösterir
+```
+## KOŞUL İFADELERİ
+
+```
+// if else ifadeleri
 ```

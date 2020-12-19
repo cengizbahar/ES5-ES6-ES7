@@ -12,6 +12,8 @@
 
 - Let : Değiştirilebilir
 - const : Değiştirilemez
+- typeof : türünü kontrol eder
+
 ```
 var x;
 x = "mustafa";
@@ -24,4 +26,11 @@ console.log(fullname);
 
 const email="cengiz@gmail.com";
 console.log(email);
+
+
+// typeof
+
+console.log(typeof email);
+
+
 ```

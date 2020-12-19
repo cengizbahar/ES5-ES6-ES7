@@ -55,11 +55,9 @@ var y = null;
 var name = "cengiz";
 
 // number
-
 var yas = 36;
 
 // boolean
-
 var online = true;
 
 ```

@@ -85,3 +85,15 @@ var isAlive = function(){
 
 
 ```
+
+## Operatörler 
+```
+var sonuc;
+const x = 60;
+const y = 12;
+
+// Aritmetik  Operatörler
+sonuc = x + y;
+
+```
+

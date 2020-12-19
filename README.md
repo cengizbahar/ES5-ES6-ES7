@@ -172,5 +172,39 @@ console.log(d.getSeconds());
 console.log(d.getMilliseconds());
 console.log(d.getDay()); // pazar günü 0. indis
 
-
 ```
+
+## String Metotları
+```
+const ad = "cengiz";
+const soyad = "bahar";
+
+var x = ad + ' ' + soyad;
+
+
+// string concat 
+  x = ad.concat(' ',soyad); // birleştirme
+
+// string length
+  x = ad.length;
+  x = soyad.length;
+
+// string UpperCase & LoverCase
+  x = ad.toUpperCase(); // harfleri büyütmek
+  x = ad.toLoverCase(); // harfleri küçültmek
+
+//string indexof
+  x = xindexOf('x');  harf sırası bulma
+
+// string substring
+  x = x.substring(0,5); // 5. den itibaren
+  x = x.slice(7); // 7. den itibaren harfleri almak
+
+// string replace
+x = x.replace('Mustafa','Cengiz'); // Yer değiştirme methodu
+
+
+console.log(x);
+```
+
+

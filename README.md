@@ -573,5 +573,42 @@ people.forEach(function (item) {
   
 ```
 
+##  Function Declaration
+```
+// Function Declaration
+ -----------------------------------
+  function sum(a,b) {
+    var c = a + b;
+    return c;
+  }
+  console.log(sum(10,20)); 
+ 
+ 
+//Function Expression  Sıklıkla Kullanılıyor
+ -----------------------------------
+ const sum = function (a=0,b=0) {
+  var c = a + b;
+  return c;
+ }
+ console.log(sum(10,20));
+```
+
+
+## Window Object
+
+```
+let val;
+var a = 10;
+val = window;
+
+val = window.location.href; // sitelinkini alıyor
+val = window.location.hostname; // host adresini yakalıyor
+
+
+console.log(val);
+
+```
+
+
 
 

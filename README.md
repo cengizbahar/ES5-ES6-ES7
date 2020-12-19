@@ -501,14 +501,77 @@ for (let i = 0; i < cars.length; i++) {
 //Array
 // for-in
 -----------------------------------
+
 for(let i in cars) {
   console.log(`index : ${i},value:  ${cars[i]}`);
 }
 console.log(typeof cars);
+
 -----------------------------------
 
 
+let people = [
+  {
+    firstName : 'Erva',
+    lastName : 'Kaba'
+  },
+  {
+    firstName : 'Mergül',
+    lastName : 'Bahar'
+  }  
+  
+]
+
+// for
+-----------------------------------
+
+for(let i = 0; i<people.length; i++) {
+  console.log(people[i].firstName);
+}
+
+
+// in
+-----------------------------------
+
+for ( let i in people) {
+  console.log(`index: ${i},  value : ${people[i].firstName}`);
+}
+
+
+// forEch
+-----------------------------------
+
+people.forEach(function (item) {
+  console.log(item.lastName);
+});
 
 
 ```
+
+##  Functions (Fonkisyonlar)
+```
+  function karesiniAl(sayi) {
+    return sayi*sayi;
+  }
+  
+  let a = karesiniAl(2); // a değeri 4 olacak
+  let b = karesiniAl(4); // b değeri 16 olacak
+  
+  console.log(a);
+  console.log(b);
+  
+  -----------------------------------
+  
+  function toplam (sayi1,sayi2) {
+    function karesiniAl(x) {
+      return x*x;
+    }
+    return karesiniAl(sayi1) + karesiniAl(sayi2);
+  }
+  let sonuc = toplam(2,4);
+  console.log(sonuc);
+  
+```
+
+
 

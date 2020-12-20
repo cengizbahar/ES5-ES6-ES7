@@ -712,6 +712,119 @@ console.log(val);
   console.log(li);
 ```
 
-## DERS 24
+## Element Silme
+```
+let list = document.querySelector('#tast-list');
+list.remove(); // tüm listeyi siler
+
+
+// list remove
+-----------------------------------
+list.childNodes[7].remove; // farklı kullanım
+
+list.removeChild(list.children[3]); // farklı kullanım
+
+// removing attribute 
+-----------------------------------
+
+list.children[0].removeAttribute('class'); // Class attributesini silme
+// for ile dönerekte silebiliriz.
+
+console.log(list);
+```
+
+## Event Listener
+```
+// addEventListener
+-----------------------------------
+const btn = document.querySelector('#btnDeleteAll');
+
+btn.addEventListener('click', function(){
+  console.log('Butona Tıklandı')
+});
+
+
+// function içerisinde
+-----------------------------------
+const btn = document.querySelector('#btnDeleteAll');
+const btn2 = document.querySelector('#btnTask');
+
+btn.addEventListener('click', btnClick);
+btn2.addEventListener('click', btnClick);
+
+function btnClick() {
+  console.log('butona tıklandı');
+}
+
+// iki fonksiyon şeklindede yapabilirz
+-----------------------------------
+function btnClick2(){
+  console.log('btn 2 ye tıkalndı');
+}
+
+
+
+// e.preventDefault = Sayfa Refreh yapmıyor
+-----------------------------------
+function btnClick2(e){
+  console.log('btn 2 ye tıkalndı');
+  
+  e.preventDefault();
+}
+```
+## Mouse Event
+```
+const btn = document.querySelector('#btnPlus');
+const division = document.querySelector('#first-group');
+
+// click
+
+btn.addEventListener('click', mouseCatch);
+division.addEventListener('click', mouseCatch);
+
+function mouseCatch(e) {
+  console.log(`event type: ${e.type}`);
+  
+  e.preventDefault();
+}
+-----------------------------------
+// Double Click
+division.addEventListener('dblclick',mouseCatch);
+
+-----------------------------------
+// mousedown mouseup
+-----------------------------------
+division.addEventListener('mousedown',mouseCatch); // tıklama
+division.addEventListener('mouseup',mouseCatch); // bırakma
+
+// mousedown mouseup
+----------------------------------- 
+division.addEventListener('mouseenter',mouseCatch); // fare ile üzerine girme
+division.addEventListener('mouseleave',mouseCatch); // fare ile üzerinden çıkma
+
+// mouseover mouseout
+----------------------------------- 
+division.addEventListener('mouseover',mouseCatch); // fare ile üzerinden çıkma
+division.addEventListener('mouseout',mouseCatch); // fare ile üzerinden çıkma
+
+
+// mouse move
+----------------------------------- 
+division.addEventListener('mousemove', mouseCatch); // alanın içine girdiğinde çalışır
+
+// x y kordinat bulma
+----------------------------------- 
+
+function mouseCatch(e) {
+  console.log(`event type: ${ {e.type}`);
+  
+  h2.textContent = `Mouse X : ${e.offsetX}
+  Mouse Y: ${e.offSetY}`;
+  
+}
+
+
+```
+
 
 
